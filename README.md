@@ -1,12 +1,24 @@
-# cssViewport [![Build Status][1]][2]
+# cssViewport
 
 Computes the perspective for a containefied field of view
 
 ## Example
+    
+    // Create a viewport with fovy PI/2
+    // and update body on window resize
+
+    var Viewport = require('css-viewport'),
+        v = new Viewport(Math.PI/2);
+    window.onresize = updatePerspective;
+    updatePerspective();
+
+    function updatePerspective() {
+        v.update(document.body);
+    };
 
 ## Installation
 
-`npm install cssViewport`
+`npm install css-viewport`
 
 ## Contributors
 
@@ -14,6 +26,3 @@ Computes the perspective for a containefied field of view
 
 ## MIT Licenced
 
-
-  [1]: https://secure.travis-ci.org/Matt-Esch/cssViewport.png
-  [2]: http://travis-ci.org/Matt-Esch/cssViewport
