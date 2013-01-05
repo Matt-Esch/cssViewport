@@ -3,18 +3,20 @@
 Computes the perspective for a containefied field of view
 
 ## Example
-    
-    // Create a viewport with fovy PI/2
-    // and update body on window resize
 
-    var Viewport = require('css-viewport'),
-        v = new Viewport(Math.PI/2);
-    window.onresize = updatePerspective;
-    updatePerspective();
+```js
+// Create a viewport with fovy PI/2
+// and update body on window resize
 
-    function updatePerspective() {
-        v.update(document.body);
-    };
+var Viewport = require('css-viewport'),
+    v = new Viewport(Math.PI/2);
+window.onresize = updatePerspective;
+updatePerspective();
+
+function updatePerspective() {
+    v.update(document.body);
+};
+```
 
 ## Installation
 
