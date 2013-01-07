@@ -1,6 +1,6 @@
 {
   "name": "css-viewport",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Computes the perspective for a containefied field of view",
   "keywords": ["css", "perspective", "viewport"],
   "author": "Matt-Esch <matt@mattesch.info>",
@@ -17,7 +17,7 @@
     "email": "matt@mattesch.info"
   },
   "dependencies": {
-      "firstkey": "~0.2.0"
+      "firstkey": "~0.1.0"
   },
   "devDependencies": {
   },
